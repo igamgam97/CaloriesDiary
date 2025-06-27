@@ -27,3 +27,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CaloriesDiary"
 include(":app")
+include(":libs:paging")
