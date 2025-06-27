@@ -1,4 +1,4 @@
-package com.example.caloriesdiary.ui.theme
+package com.example.caloriesdiary.core.designsystem.theme
 
 import androidx.compose.ui.graphics.Color
 

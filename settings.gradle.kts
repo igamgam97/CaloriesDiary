@@ -26,5 +26,8 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "CaloriesDiary"
+
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
 include(":libs:paging")
+include(":core:designsystem")
