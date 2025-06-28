@@ -3,9 +3,10 @@
 A modern Android application for tracking daily calorie intake and macronutrients, built with Jetpack Compose and following clean architecture principles.
 
 <p align="center">
-  <img src="images/summary.webp" width="250" alt="Summary Screen"/>
-  <img src="images/Diary.webp" width="250" alt="Diary Screen"/>
-  <img src="images/New_entry.webp" width="250" alt="New Entry Screen"/>
+  <img src="images/summary.webp" width="200" alt="Summary Screen"/>
+  <img src="images/Diary.webp" width="200" alt="Diary Screen"/>
+  <img src="images/New_entry.webp" width="200" alt="New Entry Screen"/>
+  <img src="images/Parameters.webp" width="200" alt="Parameters Screen"/>
 </p>
 
 ## 🎯 Features
@@ -49,7 +50,6 @@ CaloriesDiary/
 - **Navigation**: Compose Navigation
 - **Data Persistence**: Proto DataStore
 - **Build**: Gradle with Convention Plugins
-- **Language**: 100% Kotlin
 
 ## 🚀 Getting Started
 
@@ -88,15 +88,13 @@ Displays daily nutrition progress with circular indicators for:
 
 ### New Entry Screen
 - Input fields for meal name and nutritional values
-- Real-time validation
-- Debounced saving to optimize performance
+- Input validation and limits
 - Accessible numeric input with proper keyboard types
 
 ### Parameters Screen
 - User profile settings (height, weight, age)
 - Auto-save with debouncing
 - Input validation and limits
-- Material Design text fields
 
 ## 🏛 Architecture Details
 
