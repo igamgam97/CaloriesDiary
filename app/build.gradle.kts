@@ -35,6 +35,7 @@ dependencies {
     implementation(projects.feature.parameters)
     implementation(projects.feature.newmeal)
     implementation(projects.feature.diary)
+    implementation(projects.feature.summary)
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)

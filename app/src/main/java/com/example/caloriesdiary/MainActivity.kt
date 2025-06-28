@@ -4,8 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.animation.EnterTransition
-import androidx.compose.animation.ExitTransition
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -17,7 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.caloriesdiary.bottombar.BottomDiaryBottomRoute
 import com.example.caloriesdiary.bottombar.screens
@@ -27,6 +24,7 @@ import com.example.caloriesdiary.feature.diary.navigation.diaryScreen
 import com.example.caloriesdiary.feature.newmeal.navigation.navigateToNewMeal
 import com.example.caloriesdiary.feature.newmeal.navigation.newMealScreen
 import com.example.caloriesdiary.feature.parameters.navigation.parametersScreen
+import com.example.caloriesdiary.feature.summary.navigation.summaryScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -53,15 +51,6 @@ fun MainScreen(
         startDestination = BottomDiaryBottomRoute.Diary.route,
         modifier = modifier.fillMaxSize(),
     ) {
-        composable(
-            route = BottomDiaryBottomRoute.Summary.route,
-            enterTransition = { EnterTransition.None },
-            exitTransition = { ExitTransition.None },
-        ) {
-            SummaryScreen(
-                navigateToTopRoute = navController::navigateToTopRoute,
-            )
-        }
         parametersScreen(
             navigateToTopRoute = navController::navigateToTopRoute,
         )
@@ -71,6 +60,9 @@ fun MainScreen(
         diaryScreen(
             navigateToTopRoute = navController::navigateToTopRoute,
             onNavigateToMealScreen = navController::navigateToNewMeal,
+        )
+        summaryScreen(
+            navigateToTopRoute = navController::navigateToTopRoute,
         )
     }
 }

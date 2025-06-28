@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_summary_title">Summary</string>
+    <string name="feature_summary_total_intake">Total intake</string>
+    <string name="feature_summary_carbs">Carbs</string>
+    <string name="feature_summary_fat">Fat</string>
+    <string name="feature_summary_protein">Protein</string>
+    <string name="feature_summary_kcal_unit">KCAL</string>
+    <string name="feature_summary_gram_unit">G</string>
+    <string name="feature_summary_loading">Loading nutrition data…</string>
+    <string name="feature_summary_error_retry">Retry</string>
+    <string name="feature_summary_error_format">Error: %s</string>
+    <string name="feature_summary_progress_format">%d/%d %s</string>
+</resources>
