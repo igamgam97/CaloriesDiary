@@ -1,4 +1,4 @@
-package com.example.caloriesdiary.bottombar
+package com.example.caloriesdiary.core.root.bottombar
 
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.example.caloriesdiary.core.designsystem.component.BottomRoute
