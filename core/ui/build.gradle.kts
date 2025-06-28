@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.caloriesdiary.android.library)
     alias(libs.plugins.caloriesdiary.android.library.compose)
-
 }
 
 android {
