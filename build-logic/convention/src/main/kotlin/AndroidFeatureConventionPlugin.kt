@@ -21,6 +21,7 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
                 @Suppress("StringLiteralDuplication")
                 "implementation"(project(":core:ui"))
                 "implementation"(project(":core:designsystem"))
+                "implementation"(project(":core:mvi"))
 
                 "implementation"(libs.findLibrary("androidx.hilt.navigation.compose").get())
                 "implementation"(libs.findLibrary("androidx.lifecycle.runtimeCompose").get())
