@@ -1,4 +1,4 @@
-package com.google.samples.apps.nowinandroid.core.ui
+package com.example.caloriesdiary.core.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
