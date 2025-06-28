@@ -33,6 +33,7 @@ android {
 dependencies {
     implementation(projects.core.designsystem)
     implementation(projects.feature.parameters)
+    implementation(projects.feature.newmeal)
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)

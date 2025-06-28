@@ -1,5 +1,7 @@
 package com.example.caloriesdiary.core.data.di
 
+import com.example.caloriesdiary.core.data.repository.food.FoodRepository
+import com.example.caloriesdiary.core.data.repository.food.OfflineFirstFoodRepository
 import com.example.caloriesdiary.core.data.repository.user.OfflineFirstUserDataRepository
 import com.example.caloriesdiary.core.data.repository.user.UserDataRepository
 import dagger.Binds
@@ -15,4 +17,9 @@ abstract class DataModule {
     internal abstract fun bindsUserDataRepository(
         userDataRepository: OfflineFirstUserDataRepository,
     ): UserDataRepository
+
+    @Binds
+    internal abstract fun bindsFoodRepository(
+        foodRepository: OfflineFirstFoodRepository,
+    ): FoodRepository
 }

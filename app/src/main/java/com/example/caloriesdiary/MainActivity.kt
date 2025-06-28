@@ -23,6 +23,7 @@ import com.example.caloriesdiary.bottombar.BottomDiaryBottomRoute
 import com.example.caloriesdiary.bottombar.screens
 import com.example.caloriesdiary.core.designsystem.component.CaloriesBottomNavigationBar
 import com.example.caloriesdiary.core.designsystem.theme.CaloriesDiaryTheme
+import com.example.caloriesdiary.feature.newmeal.navigation.newMealScreen
 import com.example.caloriesdiary.feature.parameters.navigation.parametersScreen
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -70,6 +71,9 @@ fun MainScreen(
         }
         parametersScreen(
             navigateToTopRoute = navController::navigateToTopRoute,
+        )
+        newMealScreen(
+            onNavigateBack = navController::popBackStack,
         )
     }
 }

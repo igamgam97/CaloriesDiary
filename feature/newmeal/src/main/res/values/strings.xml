@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_newmeal_title">New entry</string>
+    <string name="feature_newmeal_name_label">Name</string>
+    <string name="feature_newmeal_name_hint">The name of the food you want to log</string>
+    <string name="feature_newmeal_carbs_label">Carbs</string>
+    <string name="feature_newmeal_carbs_hint">The amount of carbs in this meal</string>
+    <string name="feature_newmeal_proteins_label">Proteins</string>
+    <string name="feature_newmeal_proteins_hint">The amount of proteins in this meal</string>
+    <string name="feature_newmeal_fats_label">Fats</string>
+    <string name="feature_newmeal_fats_hint">The amount of fats in this meal</string>
+    <string name="feature_newmeal_calories_label">Calories</string>
+    <string name="feature_newmeal_calories_hint">The amount of calories in this meal</string>
+    <string name="feature_newmeal_save">Save</string>
+    <string name="feature_newmeal_close">Close</string>
+    
+    <!-- Validation error messages -->
+    <string name="feature_newmeal_error_required">This field is required</string>
+    <string name="feature_newmeal_error_name_length">Food name must be at least 2 characters</string>
+    <string name="feature_newmeal_error_save_failed">Failed to save entry: %s</string>
+    <string name="feature_newmeal_error_save_general">Failed to save entry</string>
+    
+    <!-- Field names for validation -->
+    <string name="feature_newmeal_field_carbs">Carbs</string>
+    <string name="feature_newmeal_field_proteins">Proteins</string>
+    <string name="feature_newmeal_field_fats">Fats</string>
+    <string name="feature_newmeal_field_calories">Calories</string>
+</resources>
