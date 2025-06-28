@@ -1,0 +1,1 @@
+# :core:datastore-proto module
