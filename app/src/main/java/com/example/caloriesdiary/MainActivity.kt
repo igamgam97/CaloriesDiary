@@ -23,7 +23,10 @@ import com.example.caloriesdiary.bottombar.BottomDiaryBottomRoute
 import com.example.caloriesdiary.bottombar.screens
 import com.example.caloriesdiary.core.designsystem.component.CaloriesBottomNavigationBar
 import com.example.caloriesdiary.core.designsystem.theme.CaloriesDiaryTheme
+import com.example.caloriesdiary.feature.parameters.navigation.parametersScreen
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,15 +68,9 @@ fun MainScreen(
                 navigateToTopRoute = navController::navigateToTopRoute,
             )
         }
-        composable(
-            route = BottomDiaryBottomRoute.Parameters.route,
-            enterTransition = { EnterTransition.None },
-            exitTransition = { ExitTransition.None },
-        ) {
-            ParametersScreen(
-                navigateToTopRoute = navController::navigateToTopRoute,
-            )
-        }
+        parametersScreen(
+            navigateToTopRoute = navController::navigateToTopRoute,
+        )
     }
 }
 
@@ -124,32 +121,6 @@ fun DiaryScreen(
     ) { innerPadding ->
         Text(
             text = "Diary Screen",
-            modifier = Modifier.padding(innerPadding),
-        )
-    }
-}
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun ParametersScreen(
-    navigateToTopRoute: (String) -> Unit,
-    modifier: Modifier = Modifier,
-) {
-    Scaffold(
-        modifier = modifier.fillMaxSize(),
-        topBar = {
-            TopAppBar(title = { Text("Parameters") })
-        },
-        bottomBar = {
-            CaloriesBottomNavigationBar(
-                navigateTo = navigateToTopRoute,
-                screens = screens,
-                currentRoute = BottomDiaryBottomRoute.Parameters.route,
-            )
-        },
-    ) { innerPadding ->
-        Text(
-            text = "Parameters Screen",
             modifier = Modifier.padding(innerPadding),
         )
     }

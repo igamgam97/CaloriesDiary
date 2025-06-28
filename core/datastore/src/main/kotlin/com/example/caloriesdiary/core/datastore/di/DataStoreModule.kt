@@ -6,8 +6,8 @@ import androidx.datastore.core.DataStoreFactory
 import androidx.datastore.dataStoreFile
 import com.example.caloriesdiary.core.datastore.UserPreferencesSerializer
 import com.example.caloriesdiary.core.di.ApplicationScope
-import com.example.caloriesdiary.core.network.Dispatcher
 import com.example.caloriesdiary.core.network.CaloriesDiaryDispatchers.IO
+import com.example.caloriesdiary.core.network.Dispatcher
 import com.google.samples.apps.nowinandroid.core.datastore.UserPreferences
 import dagger.Module
 import dagger.Provides

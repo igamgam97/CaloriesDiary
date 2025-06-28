@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_parameters_title">Parameters</string>
+    <string name="feature_parameters_height">Height</string>
+    <string name="feature_parameters_height_hint">Your height in cm</string>
+    <string name="feature_parameters_weight">Weight</string>
+    <string name="feature_parameters_weight_hint">Your weight in kg</string>
+    <string name="feature_parameters_age">Age</string>
+    <string name="feature_parameters_age_hint">Your age</string>
+</resources>

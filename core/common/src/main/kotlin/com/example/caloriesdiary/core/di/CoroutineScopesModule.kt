@@ -1,7 +1,7 @@
 package com.example.caloriesdiary.core.di
 
-import com.example.caloriesdiary.core.network.Dispatcher
 import com.example.caloriesdiary.core.network.CaloriesDiaryDispatchers.Default
+import com.example.caloriesdiary.core.network.Dispatcher
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
