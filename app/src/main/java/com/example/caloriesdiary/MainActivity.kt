@@ -23,6 +23,8 @@ import com.example.caloriesdiary.bottombar.BottomDiaryBottomRoute
 import com.example.caloriesdiary.bottombar.screens
 import com.example.caloriesdiary.core.designsystem.component.CaloriesBottomNavigationBar
 import com.example.caloriesdiary.core.designsystem.theme.CaloriesDiaryTheme
+import com.example.caloriesdiary.feature.diary.navigation.diaryScreen
+import com.example.caloriesdiary.feature.newmeal.navigation.navigateToNewMeal
 import com.example.caloriesdiary.feature.newmeal.navigation.newMealScreen
 import com.example.caloriesdiary.feature.parameters.navigation.parametersScreen
 import dagger.hilt.android.AndroidEntryPoint
@@ -60,20 +62,15 @@ fun MainScreen(
                 navigateToTopRoute = navController::navigateToTopRoute,
             )
         }
-        composable(
-            route = BottomDiaryBottomRoute.Diary.route,
-            enterTransition = { EnterTransition.None },
-            exitTransition = { ExitTransition.None },
-        ) {
-            DiaryScreen(
-                navigateToTopRoute = navController::navigateToTopRoute,
-            )
-        }
         parametersScreen(
             navigateToTopRoute = navController::navigateToTopRoute,
         )
         newMealScreen(
             onNavigateBack = navController::popBackStack,
+        )
+        diaryScreen(
+            navigateToTopRoute = navController::navigateToTopRoute,
+            onNavigateToMealScreen = navController::navigateToNewMeal,
         )
     }
 }
@@ -99,32 +96,6 @@ fun SummaryScreen(
     ) { innerPadding ->
         Text(
             text = "Summary Screen",
-            modifier = Modifier.padding(innerPadding),
-        )
-    }
-}
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun DiaryScreen(
-    navigateToTopRoute: (String) -> Unit,
-    modifier: Modifier = Modifier,
-) {
-    Scaffold(
-        modifier = modifier.fillMaxSize(),
-        topBar = {
-            TopAppBar(title = { Text("Diary") })
-        },
-        bottomBar = {
-            CaloriesBottomNavigationBar(
-                navigateTo = navigateToTopRoute,
-                screens = screens,
-                currentRoute = BottomDiaryBottomRoute.Diary.route,
-            )
-        },
-    ) { innerPadding ->
-        Text(
-            text = "Diary Screen",
             modifier = Modifier.padding(innerPadding),
         )
     }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_diary_title">Diary</string>
+    <string name="feature_diary_log_entry">Log entry</string>
+    <string name="feature_diary_empty_state">Add your first meal</string>
+    <string name="feature_diary_loading_more">Loading more entries…</string>
+    <string name="feature_diary_delete_entry">Delete entry</string>
+    <string name="feature_diary_entry_deleted">Entry deleted successfully</string>
+    <string name="feature_diary_delete_failed">Failed to delete entry</string>
+</resources>
