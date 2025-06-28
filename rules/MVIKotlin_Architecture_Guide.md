@@ -1,5 +1,10 @@
 # MVIKotlin Architecture Guide for Now in Android
 
+## Related Documentation
+
+- [Build and Fix Workflow](./BUILD_AND_FIX_FLOW) - Automated build and error fixing workflow
+- [NIA Architecture README](./ARCHITECTURE_README) - For reference architecture implementation details
+
 ## Overview
 
 MVIKotlin is a Kotlin Multiplatform MVI framework that provides a robust implementation of the Model-View-Intent pattern. This guide outlines how to integrate MVIKotlin into new features while maintaining compatibility with the existing MVVM architecture.

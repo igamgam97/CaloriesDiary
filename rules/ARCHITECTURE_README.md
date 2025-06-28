@@ -1,10 +1,13 @@
 # Nutrition Tracking App - Architecture & Code Guidelines
 
+## Related Documentation
+
+- [MVIKotlin Architecture Guide](./MVIKotlin_Architecture_Guide.md) - Detailed MVIKotlin implementation patterns
+- [Build and Fix Workflow](./BUILD_AND_FIX_FLOW) - Automated build and error fixing workflow
+
 ## Overview
 
 This nutrition tracking application, adapted for calorie and nutrition monitoring. Built entirely with Kotlin and Jetpack Compose, it follows Clean Architecture principles with **MVIKotlin** state management for complex UI interactions.
-
-**📖 For detailed MVIKotlin implementation patterns, see [MVIKotlin Architecture Guide](docs/MVIKotlin_Architecture_Guide.md)**
 
 ## Architecture
 
