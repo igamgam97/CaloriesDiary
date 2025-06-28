@@ -1,5 +1,7 @@
 # :feature:parameters module
 
+![Parameters Screen](../../images/Parameters.webp)
+
 ## Overview
 The **feature:parameters** module provides a user body parameters input screen where users can enter and manage their height, weight, and age information.
 This data is used for calculating personalized nutrition targets and BMR (Basal Metabolic Rate). 

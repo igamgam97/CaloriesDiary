@@ -15,4 +15,6 @@ android {
 
 dependencies {
     api(projects.core.datastore)
+    api(projects.core.database)
+    implementation(projects.core.model)
 }

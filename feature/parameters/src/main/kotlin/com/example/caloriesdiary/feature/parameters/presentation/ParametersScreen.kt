@@ -11,6 +11,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.FitnessCenter
+import androidx.compose.material.icons.filled.Height
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -33,7 +37,6 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.caloriesdiary.core.designsystem.component.CaloriesBottomNavigationBar
-import com.example.caloriesdiary.core.designsystem.icon.CaloriesDiaryIcons
 import com.example.caloriesdiary.core.designsystem.theme.CaloriesDiaryTheme
 import com.example.caloriesdiary.core.root.bottombar.BottomDiaryBottomRoute
 import com.example.caloriesdiary.core.root.bottombar.screens
@@ -98,7 +101,7 @@ internal fun ParametersScreen(
                 value = state.height,
                 onValueChange = { onIntent(UpdateHeight(it)) },
                 hint = stringResource(R.string.feature_parameters_height_hint),
-                icon = CaloriesDiaryIcons.Person,
+                icon = Icons.Default.Height,
             )
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -108,7 +111,7 @@ internal fun ParametersScreen(
                 value = state.weight,
                 onValueChange = { onIntent(UpdateWeight(it)) },
                 hint = stringResource(R.string.feature_parameters_weight_hint),
-                icon = CaloriesDiaryIcons.Person,
+                icon = Icons.Default.FitnessCenter,
             )
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -117,7 +120,7 @@ internal fun ParametersScreen(
                 label = stringResource(R.string.feature_parameters_age),
                 onValueChange = { onIntent(UpdateAge(it)) },
                 hint = stringResource(R.string.feature_parameters_age_hint),
-                icon = CaloriesDiaryIcons.Person,
+                icon = Icons.Default.Person,
                 value = state.age,
             )
         }
@@ -168,7 +171,6 @@ private fun ParameterCard(
                             imageVector = icon,
                             contentDescription = null,
                             tint = MaterialTheme.colorScheme.onSurfaceVariant,
-                            modifier = Modifier.padding(start = 16.dp),
                         )
                     },
                     supportingText = {

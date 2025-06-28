@@ -1,7 +1,7 @@
 package com.example.caloriesdiary.core.data.di
 
-import com.example.caloriesdiary.core.data.repository.OfflineFirstUserDataRepository
-import com.example.caloriesdiary.core.data.repository.UserDataRepository
+import com.example.caloriesdiary.core.data.repository.user.OfflineFirstUserDataRepository
+import com.example.caloriesdiary.core.data.repository.user.UserDataRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

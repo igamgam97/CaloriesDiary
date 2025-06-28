@@ -1,4 +1,4 @@
-package com.example.caloriesdiary.core.data.repository
+package com.example.caloriesdiary.core.data.repository.user
 
 import com.example.caloriesdiary.core.datastore.UserPreferencesDataSource
 import com.example.caloriesdiary.core.model.data.UserData

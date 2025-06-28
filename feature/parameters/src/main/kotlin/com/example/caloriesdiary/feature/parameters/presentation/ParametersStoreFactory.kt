@@ -4,7 +4,7 @@ import com.arkivanov.mvikotlin.core.store.Reducer
 import com.arkivanov.mvikotlin.core.store.Store
 import com.arkivanov.mvikotlin.core.store.StoreFactory
 import com.arkivanov.mvikotlin.extensions.coroutines.CoroutineExecutor
-import com.example.caloriesdiary.core.data.repository.UserDataRepository
+import com.example.caloriesdiary.core.data.repository.user.UserDataRepository
 import com.example.caloriesdiary.feature.parameters.presentation.ParametersStore.Intent
 import com.example.caloriesdiary.feature.parameters.presentation.ParametersStore.Label
 import com.example.caloriesdiary.feature.parameters.presentation.ParametersStore.State
