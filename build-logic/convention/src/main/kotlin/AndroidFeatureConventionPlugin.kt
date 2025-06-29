@@ -37,7 +37,6 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
                 "implementation"(libs.findLibrary("mvikotlin.main").get())
 
                 "testImplementation"(libs.findLibrary("androidx.navigation.testing").get())
-                "testImplementation"(libs.findLibrary("mvikotlin.test").get())
                 "androidTestImplementation"(
                     libs.findLibrary("androidx.lifecycle.runtimeTesting").get(),
                 )

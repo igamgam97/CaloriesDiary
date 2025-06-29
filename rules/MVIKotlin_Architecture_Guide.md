@@ -170,8 +170,7 @@ dependencies {
     implementation(libs.mvikotlin.main)
     implementation(libs.mvikotlin.coroutines)
     
-    // Testing
-    testImplementation(libs.mvikotlin.test)
+   
 }
 ```
 

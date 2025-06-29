@@ -26,7 +26,14 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
             }
             dependencies {
                 "androidTestImplementation"(libs.findLibrary("kotlin.test").get())
+
+                @Suppress("StringLiteralDuplication")
+                "testImplementation"(libs.findLibrary("junit").get())
                 "testImplementation"(libs.findLibrary("kotlin.test").get())
+                "testImplementation"(libs.findLibrary("kotlinx.coroutines.test").get())
+                "testImplementation"(libs.findLibrary("turbine").get())
+                "testImplementation"(libs.findLibrary("mockk").get())
+                "testImplementation"(libs.findLibrary("testparameterinjector").get())
 
                 "implementation"(libs.findLibrary("androidx.tracing.ktx").get())
             }
