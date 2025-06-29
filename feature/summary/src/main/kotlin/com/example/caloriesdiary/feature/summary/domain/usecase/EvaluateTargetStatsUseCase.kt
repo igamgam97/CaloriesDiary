@@ -5,7 +5,6 @@ package com.example.caloriesdiary.feature.summary.domain.usecase
 import com.example.caloriesdiary.core.data.repository.user.UserDataRepository
 import com.example.caloriesdiary.core.model.data.UserData
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
@@ -19,8 +18,7 @@ class EvaluateTargetStatsUseCase @Inject constructor(
         }
     }
 
-    private suspend fun evaluate(userData: UserData): TargetStatsModel {
-        val userInfo = userDataRepository.userData.first()
+    private fun evaluate(userInfo: UserData): TargetStatsModel {
         val weight = userInfo.weight.toDouble() // Int -> Double для точности вычислений
         val height = userInfo.height.toDouble() // Int -> Double для точности вычислений
         val age = userInfo.age.toDouble() // Int -> Double для точности вычислений

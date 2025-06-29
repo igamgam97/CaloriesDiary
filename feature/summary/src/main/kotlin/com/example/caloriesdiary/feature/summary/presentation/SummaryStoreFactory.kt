@@ -1,3 +1,11 @@
+// TODO(igamgam97): Improve input validation in EvaluateTargetStatsUseCase
+// Current implementation mathematically processes any input values,
+// but logically problematic cases exist:
+// 1. Zero weight/height - physically impossible,
+// should validate reasonable ranges (weight: 1-500kg, height: 50-250cm, age: 0-150years)
+// 2. Negative values - completely meaningless, should return error or minimum valid values
+// 3. Extreme values (200kg, 220cm) - mathematically correct but rare edge cases
+// 4. Consider adding input validation or boundary constraints for better real-world applicability
 package com.example.caloriesdiary.feature.summary.presentation
 
 import com.arkivanov.mvikotlin.core.store.Reducer
